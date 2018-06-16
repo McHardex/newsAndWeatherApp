@@ -9,11 +9,8 @@ import TechnologyNews from '../homePageComponents/TechnologyNews'
 import EntertainmentNews from '../homePageComponents/EntertainmentNews'
 import GeneralNews from '../homePageComponents/GeneralNews'
 
-
-
-
-
-
+// import * as routes from '../constants/routes';
+// import { Link } from 'react-router-dom';
 
 const API_KEY = 'dc73505b300fa3c78d926fcebf4bf8cd';
 
@@ -75,18 +72,18 @@ class HomePage extends Component {
   }
 
   gotoPage(event) {
-    this.setState({page: event.target.id})
+    this.setState({ page: event.target.id })
   }
 
   render() {
     return (
       <div className='app'>
-      <div>
+        {/* <div>
     <h1>Home Page</h1>
     <p>The Home Page is accessible by every signed in user.</p>
-  </div>
+  </div> */}
         <div className='newsDivs'>
-          <button className='gen-btn' id='general' onClick={this.gotoPage}>General</button>
+          <button className='gen-btn' id='general'  onClick={this.gotoPage}>General</button>
           <button className='sports-btn' id='sports' onClick={this.gotoPage}>Sports</button>
           <button className='ent-btn' id='entertainment' onClick={this.gotoPage}>Entertainment</button>
           <button className='tech-btn' id='technology' onClick={this.gotoPage}>Technology</button>

@@ -14,17 +14,17 @@ const Navigation = () =>
   </AuthUserContext.Consumer>
 
 const NavigationAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.HOME}>Home</Link></li>
-    <li><Link to={routes.ACCOUNT}>Account</Link></li>
-    <li><SignOutButton /></li>
-  </ul>
+  <div class='navigation'>
+    <p><Link to={routes.LANDING}>Landing</Link></p>
+    <p><Link to={routes.HOME}>Home</Link></p>
+    <p><Link to={routes.ACCOUNT}>Account</Link></p>
+    <p><SignOutButton /></p>
+  </div>
 
 const NavigationNonAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.SIGN_IN}>Sign In</Link></li>
-  </ul>
+  <div class='navigation'>
+    <p><Link to={routes.LANDING}>Landing</Link></p>
+    <p><Link to={routes.SIGN_IN}>Sign In</Link></p>
+  </div>
 
 export default Navigation;

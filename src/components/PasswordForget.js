@@ -5,8 +5,8 @@ import { auth } from '../firebase';
 
 
 const PasswordForgetPage = () =>
-  <div>
-    <h1>PasswordForget</h1>
+  <div className='passF'>
+    <h1 className ='passForgot'>Forgot Password</h1>
     <PasswordForgetForm />
   </div>
 
