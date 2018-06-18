@@ -76,6 +76,7 @@ class SignUpForm extends Component {
         />
         <input
           value={email}
+          aria-required="true"
           onChange={event => this.setState(byPropKey('email', event.target.value))}
           type="text"
           placeholder="Email Address"

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 
 class News extends React.Component {
@@ -30,7 +30,7 @@ class News extends React.Component {
           {Object.keys(this.state.articles).slice(0, this.state.mid).map((article, id) => {
             const articleNews = this.state.articles[article]
             return (
-              <div className='news' key={id}>
+              <Fragment className='news' key={id}>
                 <div className='newsImage'>
                   <img src={articleNews.urlToImage || 'http://www.mtmlondon.com/wp-content/uploads/2016/02/635847974891062780-425303270_news1.jpg'} alt={articleNews.description} />
                 </div>
@@ -40,7 +40,7 @@ class News extends React.Component {
                   <p className='author'>Author: {articleNews.author || 'Anonymous'}</p>
                   <p className='author'>Source: {articleNews.source.name || 'Anonymous'}</p>
                 </div>
-              </div>
+              </Fragment>
             )
           })}
         </div>
