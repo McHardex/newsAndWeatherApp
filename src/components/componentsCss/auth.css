@@ -35,19 +35,18 @@ input {
     font-size: 16px;
 }
 
-button {
-    margin-top: 10px;
-    padding: 7px 30px;
-    /* width: 10%; */
-    border: none;
-    outline: none;
-    font-size: 20px;
-    background: red;
-    color: white;
+button.signOut {
+    background: #f7eded;
+    font-weight: bolder;
 }
 
 
 a {
     text-decoration: none;
     color: blue;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
 }
