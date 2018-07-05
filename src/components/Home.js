@@ -45,10 +45,6 @@ class HomePage extends Component {
     const country = e.target.elements.country.value;
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`, {
-      method: "POST",
-        headers: {
-            "Content-Type": "text/plain"
-        }
     })
       .then((result) => {
         return result.json();
