@@ -1,2 +1,2 @@
 visit page
-https://mchardex.github.io/newsAndWeatherApp/
+https://mchardex.github.io/weatherAndNewsApp/
