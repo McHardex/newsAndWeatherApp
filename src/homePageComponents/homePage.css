@@ -12,20 +12,39 @@
   background: #faebd730;
 }
 
-button.gen-btn {
+button.signOut {
+  background-color: #a51717;
+  color: white;
+  font-size: 12px;
+  border: 1px solid black;
+  outline: none;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+button.signOut:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+  color: white;
+}
+/* button.gen-btn {
   background: #f7f5f5;
   color: red;
-}
+} */
 
 /* weather button toggle */
 button.weatherTogggle {
   font-size: 20px;
-    width: 54%;
-    padding: 10px;
-    outline: none;
-    color: #f7f5f5;
-    background: #0b148af5;
-    font-weight: bolder;
+  max-width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #f7f5f5;
+  background: #0b138a;
+  cursor: pointer;
+}
+button.weatherTogggle:hover {
+  color: #f7f5f5e8;
+  background: #0b138ae8;
+  opacity: 0.8;
 }
 
 /* header buttons */
@@ -39,30 +58,65 @@ button.weatherTogggle {
 .sports-btn, .ent-btn, .tech-btn, .gen-btn {
   padding: 5px 6px;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 10px 30px;
   outline: none;
   color: #f7f5f5;
   background: #ef1106;
   font-family: monospace;
+  border: 1px solid #b7b5b3;
 }
 
-button:hover {
+.sports-btn:hover {
   background: rgba(66, 61, 61, 0.164);
   color: red;
   cursor: pointer;
 }
+.sports-btn:focus {
+  background: #f7f5f5;
+  color: red;
+}
+
+.ent-btn:hover {
+  background: rgba(66, 61, 61, 0.164);
+  color: red;
+  cursor: pointer;
+}
+.ent-btn:focus {
+  background: #f7f5f5;
+  color: red;
+}
+
+.tech-btn:hover {
+  background: rgba(66, 61, 61, 0.164);
+  color: red;
+  cursor: pointer;
+}
+.tech-btn:focus {
+  background: #f7f5f5;
+  color: red;
+}
+
+.gen-btn:hover {
+  background: rgba(66, 61, 61, 0.164);
+  color: red;
+  cursor: pointer;
+}
+.gen-btn:focus {
+  background: #f7f5f5;
+  color: red;
+}
 
 /* weather position */
 .weather-position {
-  width: 21%;
+  width: 15%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  left: 30px;
-  top: 57px;
+  left: 60px;
+  top: 60px;
   z-index: 1;
 }
 
@@ -75,20 +129,27 @@ button:hover {
 
 /* weather input */
 input.city, .country {
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 25px;
-  border: 2px solid #fba94347;
-  margin: -2px;
+  padding: 7px;
+  font-size: 10px;
+  border-radius: 2px;
+  border: 1px solid #fba94347;
+  margin: 2px;
+  outline: none;
 }
 
 /* get weather button */
 button.getWeather-btn {
-  margin-top: 8px;
-  padding: 6px;
-  font-size: 20px;
+  margin-top: 10px;
+  padding: 9px;
+  font-size: 15px;
   color: #650404;
-  border-radius: 7px;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 0.4;
+  outline: none;
+}
+button.getWeather-btn:hover {
+  opacity: 0.8;
 }
 
 /* weather result */
@@ -121,7 +182,8 @@ span {
 }
 
 .newsImage img {
-    max-width: 200px;
+  width: 200px;
+  max-height: 150px;
 }
 
 .news {
@@ -167,89 +229,36 @@ p.description {
   -ms-flex-direction: row;
   /* margin-top: -4px; */
   flex-direction: row;
-  background: #0e0e00f0;
-}
-
-.newsContainer {
-  display: flex;
-  background:#f5f6dccf;
-  max-width: 70%;
-  margin: 0 auto;
-}
-
-.newsContainer2 {
-  margin-top: 6%;
-  width: 50%;
-  border-right: 1px solid #3a373742;
-}
-
-@media (max-width: 800px) {
-  .newsDivs {
-    width: 100%;
-    justify-content: center;
-    background: #00000047;
-}
-
-  .splitNews-weather {
-    display: flex;
-    flex-direction: column;
-}
-
-.weather-position {
-  width: 55%;
-  position: relative;
-  margin: 0 auto;
-  top: 0;
-}
-
-.news {
-  width: fit-content;
+  background: #FFFFFF;
 }
 
 .newsContainer {
   display: flex;
   flex-direction: column;
-  background:#f5f6dccf;
-  max-width: 70%;
+  background:#ffffff;
+  width: 50%;
   margin: 0 auto;
-}
-
-.newsContainer2 {
-  margin-top: 6%;
-  width: 100%;
-  border-right: 1px solid #3a373742;
-}
-
-.newsImage img {
-  max-width: 150px;
-}
-
-button.weatherTogggle {
-  border: 10px solid #1c1d0f;
-  position: relative;
-  margin: 0 auto;
-}
-
-button:hover {
-  background: rgba(66, 61, 61, 0.164);
-  color: red;
-  cursor: pointer;
-}
+  padding-top: 40px;
 }
 
 @media (max-width: 500px) {
   .newsDivs {
     flex-direction: column;
+    background: #f7f8e2;
+    width: 100%;
   }
 
   .sports-btn, .ent-btn, .tech-btn, .gen-btn {
-    margin: 5px 125px
+    margin: 5px 60px;
+    width: 50%;
+    margin: 10px auto;
+    background-color: #8a008b;
   }
 
   .weather-position {
     left: 0;
     width: 100%;
-    background: #131312;
+    background: #f7f8e2;
   }
 
   button.weatherTogggle {
@@ -259,8 +268,7 @@ button:hover {
   }
 
   .newsContainer {
-    margin: 0 auto;
-    max-width: 98%;
+    width: 100%;
   }
 
   .news {
@@ -282,16 +290,76 @@ button:hover {
   }
 }
 
+
+
+@media (max-width: 800px) {
+  .newsDivs {
+    width: 100%;
+    justify-content: center;
+    background: #00000047;
+}
+
+  .splitNews-weather {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7dc
+}
+
+.weather-position {
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+
+.news {
+  width: fit-content;
+}
+
+.newsContainer {
+  display: flex;
+  flex-direction: column;
+  background:#f5f6dccf;
+  width: 100%;    
+  margin-top: -46px;
+}
+
+.newsContainer2 {
+  margin-top: 6%;
+  width: 100%;
+  border-right: 1px solid #3a373742;
+}
+
+.newsImage img {
+  max-width: 150px;
+}
+
+button.weatherTogggle {
+  position: relative;
+  margin: 0 auto;
+}
+
+button.weatherTogggle:hover {
+  background: rgba(66, 61, 61, 0.164);
+  color: red;
+  cursor: pointer;
+}
+}
+
+
+
 @media (width: 1024px) {
   .newsContainer {
     margin: 0 auto;
-    max-width: 75%;
+    width: 70%;;
   }
 
   .news {
     margin: 10px 0px;
-    display: block;
-    width: 90%;
+    display: flex;
+    width: 100%;
+    align-items: center;
   }
 
   button.weatherTogggle {
@@ -300,6 +368,7 @@ button:hover {
 
   .weather-position {
     top: auto;
-    left: 128px;
+    width: 25%;
+    left: 17%;
   }
 }

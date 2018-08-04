@@ -10,7 +10,7 @@ import './componentsCss/auth.css';
 
 const SignInPage = ({ history }) =>
   <div className='signIn'>
-    <h1>Sign In</h1>
+    <h1 className='welcomePageTitle'>Welcome to Hacker News</h1>
     <SignInForm history={history} />
     <PasswordForgetLink />
     <SignUpLink />
@@ -80,7 +80,7 @@ class SignInForm extends Component {
           type="password"
           placeholder="Password"
         />
-        <button disabled={isInvalid} type="submit">
+        <button disabled={isInvalid} type="submit" className='signin'>
           Sign In
         </button>
 

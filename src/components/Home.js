@@ -79,10 +79,6 @@ class HomePage extends Component {
   render() {
     return (
       <div className='app'>
-        {/* <div>
-    <h1>Home Page</h1>
-    <p>The Home Page is accessible by every signed in user.</p>
-  </div> */}
         <div className='newsDivs'>
           <button className='gen-btn' id='general'  onClick={this.gotoPage}>General</button>
           <button className='sports-btn' id='sports' onClick={this.gotoPage}>Sports</button>
