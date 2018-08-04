@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+div#root {
+  height: 100%;
+}
+
+h1.signUpPage {
+  font-family: fantasy;
+  color: blue;
+  font-weight: 900;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUpDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button.signUp {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  outline: none;
+}
+
+button.signUp:hover {
+  background-color: rgba(255, 0, 0, 0.507);
+  color: white;
+}

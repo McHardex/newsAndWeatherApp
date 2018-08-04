@@ -15,7 +15,7 @@ div#root {
     font-family: fantasy;
 }
 
-.signIn, .signUp, .passForgot {
+.signIn {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -27,7 +27,7 @@ h1.signUp, .passForgot {
     margin-top: 3%;
 }
 
-form {
+.signInForm {
     display: flex;
     flex-direction: column;
     align-items: center;

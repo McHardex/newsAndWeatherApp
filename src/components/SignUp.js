@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { auth } from '../firebase';
 import * as routes from '../constants/routes';
+import './componentsCss/signUp.css'
+import { SignInLink } from './SignIn';
 
 const SignUpPage = ({history}) =>
-  <div>
-    <h1 className='signUp'>Sign Up</h1>
+  <div className='signUpDiv'>
+    <h1 className='signUpPage'>Sign Up to Hacker News</h1>
     <SignUpForm history = {history}/>
+    <SignInLink />
   </div>
 
 const INITIAL_STATE = {
@@ -66,7 +69,7 @@ class SignUpForm extends Component {
 
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} className='signUpForm'>
       <input
           value={username}
           onChange={event => this.setState(byPropKey('username', event.target.value))}
@@ -92,7 +95,7 @@ class SignUpForm extends Component {
           type="password"
           placeholder="Confirm Password"
         />
-        <button disabled={isInvalid} type="submit">
+        <button disabled={isInvalid} type="submit" className='signUp'>
           Sign Up
         </button>
 

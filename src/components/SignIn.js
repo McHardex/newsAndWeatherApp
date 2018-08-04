@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import { SignUpLink } from './SignUp';
 import { auth } from '../firebase';
 import * as routes from '../constants/routes';
 import { PasswordForgetLink } from './PasswordForget';
-import './componentsCss/auth.css';
+import './componentsCss/signIn.css';
 
 
 const SignInPage = ({ history }) =>
@@ -67,7 +67,7 @@ class SignInForm extends Component {
       email === '';
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} className='signInForm'>
         <input
           value={email}
           onChange={event => this.setState(byPropKey('email', event.target.value))}
@@ -90,8 +90,12 @@ class SignInForm extends Component {
   }
 }
 
+const SignInLink = () =>
+  <p>Want to log in to account?{' '}<Link to={routes.SIGN_IN}>Sign in</Link></p>
+
 export default withRouter(SignInPage);
 
 export {
   SignInForm,
+  SignInLink,
 };
