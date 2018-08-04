@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { auth } from '../firebase';
 import './componentsCss/passwordForget.css';
+import * as routes from '../constants/routes';
 
 
 const PasswordForgetPage = () =>
