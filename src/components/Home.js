@@ -9,9 +9,6 @@ import TechnologyNews from '../homePageComponents/TechnologyNews'
 import EntertainmentNews from '../homePageComponents/EntertainmentNews'
 import GeneralNews from '../homePageComponents/GeneralNews'
 
-// import * as routes from '../constants/routes';
-// import { Link } from 'react-router-dom';
-
 const API_KEY = 'dc73505b300fa3c78d926fcebf4bf8cd';
 
 class HomePage extends Component {

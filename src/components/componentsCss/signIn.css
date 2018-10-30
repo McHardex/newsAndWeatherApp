@@ -17,26 +17,35 @@ div#root {
 
 .signIn {
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    height: 100vh;
+    width: 50%;
+    height: 90vh;
+    margin: 0 auto;
 }
 
 h1.signUp, .passForgot {
     margin-top: 3%;
 }
 
+.signupPassFrg {
+    height: 20vh;
+}
+
 .signInForm {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 
 input {
-    width: 30%;
+    width: 100%;
     padding: 13px 12px;
-    margin: 25px auto;
+    margin: 5px;
     outline: none;
     border: none;
     box-sizing: border-box;
@@ -59,4 +68,19 @@ button.signin:hover {
 a {
     text-decoration: none;
     color: blue;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    div#root {
+        height: 100vh;
+    }
+    
+    .welcomePageTitle {
+        font-size: 20px;
+    }
+    
+    .signIn {
+        width: 100%;
+        height: 90vh;
+    }
 }

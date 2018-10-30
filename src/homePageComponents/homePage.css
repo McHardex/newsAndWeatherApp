@@ -1,7 +1,10 @@
 .navigation {
   display: flex;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  align-items: center;
   background: #080808;
+  height: 10vh;
 }
 
 .navigation a {
@@ -26,10 +29,6 @@ button.signOut:hover {
   background-color: rgba(255, 0, 0, 0.4);
   color: white;
 }
-/* button.gen-btn {
-  background: #f7f5f5;
-  color: red;
-} */
 
 /* weather button toggle */
 button.weatherTogggle {
@@ -255,12 +254,6 @@ p.description {
     background-color: #8a008b;
   }
 
-  .weather-position {
-    left: 0;
-    width: 100%;
-    background: #f7f8e2;
-  }
-
   button.weatherTogggle {
     border: 1px solid #131312;
     background: #131312;
@@ -297,54 +290,55 @@ p.description {
     width: 100%;
     justify-content: center;
     background: #00000047;
-}
+  }
 
   .splitNews-weather {
     display: flex;
     flex-direction: column;
     background-color: #f5f7dc
-}
+  }
 
-.weather-position {
-  width: 50%;
+  .weather-position {
+  width: 90%;
   position: relative;
   margin: 0 auto;
   top: 0;
   left: 0;
-}
+  right: 0;
+  }
 
-.news {
+  .news {
   width: fit-content;
-}
+  }
 
-.newsContainer {
+  .newsContainer {
   display: flex;
   flex-direction: column;
   background:#f5f6dccf;
   width: 100%;    
   margin-top: -46px;
-}
+  }
 
-.newsContainer2 {
+  .newsContainer2 {
   margin-top: 6%;
   width: 100%;
   border-right: 1px solid #3a373742;
-}
+  }
 
-.newsImage img {
+  .newsImage img {
   max-width: 150px;
-}
+  }
 
-button.weatherTogggle {
+  button.weatherTogggle {
   position: relative;
   margin: 0 auto;
-}
+  }
 
-button.weatherTogggle:hover {
+  button.weatherTogggle:hover {
   background: rgba(66, 61, 61, 0.164);
   color: red;
   cursor: pointer;
-}
+  }
 }
 
 
@@ -368,7 +362,8 @@ button.weatherTogggle:hover {
 
   .weather-position {
     top: auto;
-    width: 25%;
-    left: 17%;
+    width: 90%;
+    left: 0;
+    right: 0;
   }
 }

@@ -12,8 +12,10 @@ const SignInPage = ({ history }) =>
   <div className='signIn'>
     <h1 className='welcomePageTitle'>Welcome to Hacker News</h1>
     <SignInForm history={history} />
-    <PasswordForgetLink />
-    <SignUpLink />
+    <div className='signupPassFrg'>
+      <PasswordForgetLink />
+      <SignUpLink />
+    </div>
   </div>
 
 const byPropKey = (propertyName, value) => () => ({
