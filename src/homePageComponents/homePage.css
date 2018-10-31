@@ -40,6 +40,7 @@ button.weatherTogggle {
   background: #0b138a;
   cursor: pointer;
 }
+
 button.weatherTogggle:hover {
   color: #f7f5f5e8;
   background: #0b138ae8;
@@ -118,7 +119,7 @@ button.weatherTogggle:hover {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-
+  left: 10%;
   z-index: 1;
 }
 
