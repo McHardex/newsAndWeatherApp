@@ -22,9 +22,19 @@ h1.signUpPage {
 }
 
 .signUpDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: antiquewhite;
+}
+
+.signup-cont {
   border: 1px solid;
   padding: 10px;
   text-align: center;
+  width: 30%;
 }
 
 button.signUp {

@@ -10,11 +10,13 @@ import './componentsCss/signIn.css';
 
 const SignInPage = ({ history }) =>
   <div className='signIn'>
-    <h1 className='welcomePageTitle'>Welcome to Hacker News</h1>
-    <SignInForm history={history} />
-    <div className='signupPassFrg'>
-      <PasswordForgetLink />
-      <SignUpLink />
+    <div className='signIn-cont'>
+      <h1 className='welcomePageTitle'>Welcome to Hacker News</h1>
+      <SignInForm history={history} />
+      <div className='signupPassFrg'>
+        <PasswordForgetLink />
+        <SignUpLink />
+      </div>
     </div>
   </div>
 

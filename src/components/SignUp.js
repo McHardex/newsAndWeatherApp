@@ -7,9 +7,11 @@ import { SignInLink } from './SignIn';
 
 const SignUpPage = ({history}) =>
   <div className='signUpDiv'>
-    <h1 className='signUpPage'>Sign Up to Hacker News</h1>
-    <SignUpForm history = {history}/>
-    <SignInLink />
+    <div className='signup-cont'>
+      <h1 className='signUpPage'>Sign Up to Hacker News</h1>
+      <SignUpForm history = {history}/>
+      <SignInLink />
+    </div>
   </div>
 
 const INITIAL_STATE = {
