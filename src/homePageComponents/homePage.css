@@ -286,8 +286,8 @@ p.description {
   }
 
   button.weatherTogggle {
-    border: 1px solid #131312;
-    background: #131312;
+    border: none;
+    background: #000;
     cursor: pointer;
   }
 
@@ -323,7 +323,7 @@ p.description {
     width: 100%;
     position: relative;
     margin: 0 auto;
-    top: -2px;
+    top: -4px;
     left: 0;
     right: 0;
     background: #000;
