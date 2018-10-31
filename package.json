@@ -7,8 +7,10 @@
     "gh-pages": "^1.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-responsive-decorator": "0.0.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "recompose": "^0.30.0"
   },
   "homepage": "https://mchardex.github.io/weatherAndNewsApp",
   "scripts": {

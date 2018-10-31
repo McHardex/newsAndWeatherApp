@@ -1,5 +1,5 @@
 import withAuthorization from './withAuthorization';
-import React, { Component } from 'react';
+import React from 'react';
 import '../homePageComponents/homePage.css';
 import Titles from '../homePageComponents/Titles'
 import Form from '../homePageComponents/Form'
@@ -9,17 +9,20 @@ import TechnologyNews from '../homePageComponents/TechnologyNews'
 import EntertainmentNews from '../homePageComponents/EntertainmentNews'
 import GeneralNews from '../homePageComponents/GeneralNews'
 import menu from '../images/menu-icon.png'
+import Responsive from 'react-responsive-decorator'
+import { compose } from 'recompose'
+
 
 const API_KEY = 'dc73505b300fa3c78d926fcebf4bf8cd';
 
-class HomePage extends Component {
+class HomePage extends React.Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
       page: 'general',
       isOpen: false,
-      showMenu: false,
+      isMobile: false,
       temperature: "",
       city: "",
       country: "",
@@ -32,6 +35,20 @@ class HomePage extends Component {
     this.gotoPage = this.gotoPage.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
   }
+  
+  componentDidMount() {
+    this.props.media({ minWidth: 768 }, () => {
+      this.setState({
+        isMobile: true
+      });
+    });
+ 
+    this.props.media({ maxWidth: 768 }, () => {
+      this.setState({
+        isMobile: false
+      });
+    });
+  }
 
   toggleOpen() {
     this.setState({
@@ -41,7 +58,7 @@ class HomePage extends Component {
 
   toggleMenu() {
     this.setState({
-      showMenu: !this.state.showMenu
+      isMobile: !this.state.isMobile
     })
   }
 
@@ -88,7 +105,7 @@ class HomePage extends Component {
       <div className='menu-icon'>
         <img onClick={this.toggleMenu} src={menu} alt='menu-icon'/>
       </div>
-      {this.state.showMenu && 
+      {this.state.isMobile && 
         <div className='newsDivs'>
           <button className='gen-btn' id='general'  onClick={this.gotoPage}>General</button>
           <button className='sports-btn' id='sports' onClick={this.gotoPage}>Sports</button>
@@ -128,4 +145,7 @@ class HomePage extends Component {
 
 const authCondition = (authUser) => !!authUser;
 
-export default withAuthorization(authCondition)(HomePage);
+export default compose(
+  withAuthorization(authCondition),
+  Responsive
+)(HomePage);

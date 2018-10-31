@@ -113,14 +113,12 @@ button.weatherTogggle:hover {
 
 /* weather position */
 .weather-position {
-  /* width: 15%; */
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  left: 10%;
-  /* top: 60px; */
+
   z-index: 1;
 }
 
@@ -193,9 +191,7 @@ span {
 .news {
   display: -ms-flexbox;
   display: flex;
-  /* border: 20px solid #1f1e1e0d; */
   padding: 10px;
-  /* background: beige; */
   margin: 20px;
   -ms-flex-align: center;
   align-items: center;
@@ -231,7 +227,6 @@ p.description {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-  /* margin-top: -4px; */
   flex-direction: row;
   background: #FFFFFF;
 }
@@ -262,7 +257,6 @@ p.description {
     padding: 2px;
     flex-direction: column;
     background: #080808;
-    transition: 2s ease-in;
   }
 
   .menu-icon {
