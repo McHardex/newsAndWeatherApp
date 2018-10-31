@@ -1,10 +1,10 @@
 .navigation {
   display: flex;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  align-items: center;
   background: #080808;
-  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .navigation a {
