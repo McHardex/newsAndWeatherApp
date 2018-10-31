@@ -8,6 +8,7 @@ import SportNews from '../homePageComponents/SportNews'
 import TechnologyNews from '../homePageComponents/TechnologyNews'
 import EntertainmentNews from '../homePageComponents/EntertainmentNews'
 import GeneralNews from '../homePageComponents/GeneralNews'
+import menu from '../images/menu-icon.png'
 
 const API_KEY = 'dc73505b300fa3c78d926fcebf4bf8cd';
 
@@ -18,6 +19,7 @@ class HomePage extends Component {
     this.state = {
       page: 'general',
       isOpen: false,
+      showMenu: false,
       temperature: "",
       city: "",
       country: "",
@@ -28,11 +30,18 @@ class HomePage extends Component {
     this.getWeather = this.getWeather.bind(this);
     this.toggleOpen = this.toggleOpen.bind(this);
     this.gotoPage = this.gotoPage.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   toggleOpen() {
     this.setState({
       isOpen: !this.state.isOpen
+    })
+  }
+
+  toggleMenu() {
+    this.setState({
+      showMenu: !this.state.showMenu
     })
   }
 
@@ -76,12 +85,17 @@ class HomePage extends Component {
   render() {
     return (
       <div className='app'>
+      <div className='menu-icon'>
+        <img onClick={this.toggleMenu} src={menu} alt='menu-icon'/>
+      </div>
+      {this.state.showMenu && 
         <div className='newsDivs'>
           <button className='gen-btn' id='general'  onClick={this.gotoPage}>General</button>
           <button className='sports-btn' id='sports' onClick={this.gotoPage}>Sports</button>
           <button className='ent-btn' id='entertainment' onClick={this.gotoPage}>Entertainment</button>
           <button className='tech-btn' id='technology' onClick={this.gotoPage}>Technology</button>
         </div>
+      }
         <div className='splitNews-weather'>
           <div className='weather-position'>
             <button className='weatherTogggle' onClick={this.toggleOpen}>{this.state.isOpen ? 'Hide' : 'Show'} Weather</button>

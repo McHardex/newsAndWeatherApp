@@ -50,8 +50,13 @@ button.weatherTogggle:hover {
 .newsDivs {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  background: #00000047;
+  justify-content: space-around;
+  background: #000000bf;
+  padding: 0 100px;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .sports-btn, .ent-btn, .tech-btn, .gen-btn {
@@ -108,14 +113,14 @@ button.weatherTogggle:hover {
 
 /* weather position */
 .weather-position {
-  width: 15%;
+  /* width: 15%; */
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  left: 60px;
-  top: 60px;
+  left: 10%;
+  /* top: 60px; */
   z-index: 1;
 }
 
@@ -235,23 +240,54 @@ p.description {
   display: flex;
   flex-direction: column;
   background:#ffffff;
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   padding-top: 40px;
 }
 
-@media (max-width: 500px) {
-  .newsDivs {
-    flex-direction: column;
-    background: #f7f8e2;
-    width: 100%;
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .app {
+    background: #000;
   }
 
+  .newsDivs {
+    width: 60%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #00000047;
+    -ms-flex-direction: column;
+    margin: 0 auto;
+    padding: 2px;
+    flex-direction: column;
+    background: #080808;
+    transition: 2s ease-in;
+  }
+
+  .menu-icon {
+    width: 100%;
+    text-align: center;
+    background: #000;
+    display: block;
+  }
+
+  .menu-icon img {
+    width: 30px;
+    height: auto;
+    border: 1px solid #080808;
+    background: #ffec06;
+    outline: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+
   .sports-btn, .ent-btn, .tech-btn, .gen-btn {
-    margin: 5px 60px;
-    width: 50%;
-    margin: 10px auto;
-    background-color: #8a008b;
+    background-color: #8a008b; 
+    padding: 5px;
+    margin: 2px;
   }
 
   button.weatherTogggle {
@@ -261,13 +297,17 @@ p.description {
   }
 
   .newsContainer {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:#f5f6dccf;
+    width: 100%;    
+    margin-top: -46px;
   }
 
   .news {
     margin: 10px 0px;
     display: block;
-    width: 90%;
+    width: fit-content;
   }
 
   .newsImage {
@@ -279,91 +319,39 @@ p.description {
   }
 
   .splitNews-weather {
-    background: white;
-  }
-}
-
-
-
-@media (max-width: 800px) {
-  .newsDivs {
-    width: 100%;
-    justify-content: center;
-    background: #00000047;
-  }
-
-  .splitNews-weather {
     display: flex;
     flex-direction: column;
     background-color: #f5f7dc
   }
 
   .weather-position {
-  width: 90%;
-  position: relative;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  }
-
-  .news {
-  width: fit-content;
-  }
-
-  .newsContainer {
-  display: flex;
-  flex-direction: column;
-  background:#f5f6dccf;
-  width: 100%;    
-  margin-top: -46px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    top: -2px;
+    left: 0;
+    right: 0;
+    background: #000;
   }
 
   .newsContainer2 {
-  margin-top: 6%;
-  width: 100%;
-  border-right: 1px solid #3a373742;
+    margin-top: 6%;
+    width: 100%;
+    border-right: 1px solid #3a373742;
   }
 
   .newsImage img {
-  max-width: 150px;
+    max-width: 150px;
   }
 
   button.weatherTogggle {
-  position: relative;
-  margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
   }
 
   button.weatherTogggle:hover {
-  background: rgba(66, 61, 61, 0.164);
-  color: red;
-  cursor: pointer;
-  }
-}
-
-
-
-@media (width: 1024px) {
-  .newsContainer {
-    margin: 0 auto;
-    width: 70%;;
-  }
-
-  .news {
-    margin: 10px 0px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-  }
-
-  button.weatherTogggle {
-    width: 100%;
-  }
-
-  .weather-position {
-    top: auto;
-    width: 90%;
-    left: 0;
-    right: 0;
+    background: rgba(66, 61, 61, 0.164);
+    color: red;
+    cursor: pointer;
   }
 }
