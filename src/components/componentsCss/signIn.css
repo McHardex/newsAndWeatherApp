@@ -86,7 +86,7 @@ p.error-msg {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .signIn {
+  .signIn-cont {
     width: 90%;
     border: none;
   }

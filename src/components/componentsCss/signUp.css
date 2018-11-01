@@ -50,7 +50,7 @@ button.signUp:hover {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .signUpDiv {
+  .signup-cont {
     width: 90%;
     border: none;
   }
