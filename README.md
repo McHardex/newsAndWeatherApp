@@ -3,6 +3,10 @@
 
 A web application for reading different news ranging from sports, entertainment, technolojgy and general news around the globe as well as checking weather forcast around your location
 
+## Features of the template
+* Users can Signup and log in on the app.
+* Users can read news..
+* Users can check weather forecast in their location.
 
 ## Made With
   ### UI
@@ -11,23 +15,26 @@ A web application for reading different news ranging from sports, entertainment,
     * firebase for login authentication
 
     - Api consumed
-    ```
     https://newsapi.org
-    ```
 
 ## Installation.
-```
-  * Install [Nodejs](https://nodejs.org/en/download/)
-  * Clone this repo ``` git clone https://github.com/McHardex/weatherAndNewsApp.git ```
-  * Run ```npm install``` to install the required dependencies
-```
+  install nodejs
+   ```
+   Install [Nodejs](https://nodejs.org/en/download/)
+   ```
+   Clone this repo 
+   ``` 
+   git clone https://github.com/McHardex/weatherAndNewsApp.git 
+   ```
+   Install dependencies 
+   ```
+   npm install
+   ```
 
-
-## Features of the template
-* Users can Signup and log in on the app.
-* Users can read news..
-* Users can check weather forecast in their location.
-
+## Starting the Application
+  ```
+    npm start
+  ```
 
 ## License and Copyright
 &copy; Bukunmi Adebisi
