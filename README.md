@@ -18,13 +18,12 @@ A web application for reading different news ranging from sports, entertainment,
     * CSS for styling
     * firebase for login authentication
 
-    [ Api consumed ](https://newsapi.org)
+[ Api consumed ](https://newsapi.org)
 
 ## Installation.
   install nodejs
-  ```
   [Nodejs](https://nodejs.org/en/download/)
-  ```
+
   Clone this repo 
   ``` 
   git clone https://github.com/McHardex/weatherAndNewsApp.git 
@@ -36,7 +35,7 @@ A web application for reading different news ranging from sports, entertainment,
 
 ## Starting the Application
   ```
-    npm start
+  npm start
   ```
 
 ## License and Copyright
