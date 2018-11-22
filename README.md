@@ -34,7 +34,7 @@ A web application for reading different news ranging from sports, entertainment,
   ```
   navigate to application root dir
   ```
-  cd currency-converter
+  cd weatherAndNewsApp
   ```
 ## Starting the Application
   ```
