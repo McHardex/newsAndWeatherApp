@@ -4,7 +4,7 @@
 A web application for reading different news ranging from sports, entertainment, technolojgy and general news around the globe as well as checking weather forcast around your location
 
 
-- The App is hosted on github-pages [ here ](https://mchardex.github.io/weatherAndNewsApp/).
+- The App is hosted on github-pages [ here ](https://mchardex.github.io/weatherAndNewsApp).
 
 
 ## Features of the template
