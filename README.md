@@ -1,5 +1,5 @@
-
 # weather and news web app
+
 
 A web application for reading different news ranging from sports, entertainment, technolojgy and general news around the globe as well as checking weather forcast around your location
 
@@ -32,7 +32,10 @@ A web application for reading different news ranging from sports, entertainment,
   ```
   npm install
   ```
-
+  navigate to application root dir
+  ```
+  cd currency-converter
+  ```
 ## Starting the Application
   ```
   npm start
